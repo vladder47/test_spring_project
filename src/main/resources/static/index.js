@@ -11,6 +11,10 @@
             .when('/products', {
                 templateUrl: 'product/products.html',
                 controller: 'productsController'
+            })
+            .when('/furniture', {
+                templateUrl: 'furniture/furniture.html',
+                controller: 'furnitureController'
             });
     }
 })();
