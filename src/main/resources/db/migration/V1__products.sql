@@ -34,3 +34,18 @@ VALUES ('Desk', 'FULLERTON MODULAR BLACK DESK WITH TWO LEGS', 600.0),
        ('Bed', 'PARKER STORAGE BED', 1000.0),
        ('Chair', 'GRANT LOW-BACK OFFICE CHAIR', 400.0),
        ('Cabinet', 'INLINE BRASS FILING CABINET', 650.0);
+
+CREATE TABLE document
+(
+    id          BIGSERIAL PRIMARY KEY,
+    title       VARCHAR(255),
+    description VARCHAR(5000),
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO document (title, description)
+VALUES  ('Document 1', 'Description document 1'),
+        ('Document 2', 'Description document 2'),
+        ('Document 3', 'Description document 3'),
+        ('Document 4', 'Description document 4');

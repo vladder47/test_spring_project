@@ -15,6 +15,10 @@
             .when('/furniture', {
                 templateUrl: 'furniture/furniture.html',
                 controller: 'furnitureController'
+            })
+            .when('/document', {
+                templateUrl: 'document/document.html',
+                controller: 'documentController'
             });
     }
 })();
